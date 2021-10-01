@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="container">
+    <div id="input">
+        <input type="text" id="cityInput" placeholder="City name">
+        <button type="submit" id="submit">SUBMIT</button>
+    </div>
+    <div id="cityOptions">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        <div id="locationTimeAndIcon">
+            <div id="placeTime">
+                <div id="place"></div>
+                <div id="time"></div>
+            </div>
+            <img id="icon"/>
+        </div>
+        <div id="temperatureAndHumidity">
+            <div id="temperature"></div>
+            <div id="humidity"></div>
+        </div>
+        <div id="descriptionAndClouds">
+            <div id="description"></div>
+            <div id="clouds"></div>
+        </div>
+        <div id="hourlyForecast">
+            <input type="range" list="marks" min="0" max="47" value="0" step="1" id="range"/>
+            <datalist id="marks">
+                <option value="0"></option>
+                <option value="3"></option>
+                <option value="7"></option>
+                <option value="11"></option>
+                <option value="15"></option>
+                <option value="19"></option>
+                <option value="23"></option>
+                <option value="27"></option>
+                <option value="31"></option>
+                <option value="35"></option>
+                <option value="39"></option>
+                <option value="43"></option>
+                <option value="47"></option>
+            </datalist>
+        </div>
+        <div id="clothes">
+            <img id="clothesBackground" src="img/wardrobe.jpg">
+            <img id="umbrella" src="img/umbrella.png">
+            <img id="glasses" src="img/glasses.png">
+            <img id="clothesItem" src="img/wintercoat.png">
+        </div>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>

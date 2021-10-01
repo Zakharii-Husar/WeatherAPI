@@ -1,0 +1,110 @@
+﻿html, body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#container *{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#locationTimeAndIcon {
+    background-color: blue;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+#placeTime{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#temperatureAndHumidity {
+    background-color: green;
+    font-weight: 500;
+    font-size: large;
+}
+
+#descriptionAndClouds {
+    background-color: yellow;
+    font-weight: 500;
+    font-size: large;
+}
+
+
+#range {
+    display: none;
+    margin: 4px 0 4px;
+    width: 100%;
+    height: 10px;
+}
+
+#range::-webkit-slider-thumb{
+    color: white;
+}
+
+#clothesBackground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#clothesItem{
+position: relative;
+left: 50%;
+width: 275px;
+transform: translate(-50%, 30%);
+}
+#umbrella{
+    left: 0;
+}
+
+#glasses{
+    right: 0;
+}
+
+#umbrella, #glasses{
+    display: none;
+    position:absolute;
+    width: 80px;
+}
+
+#cityInput{
+    width: 80%;
+    font-size: large;
+    font-weight: 800;
+    background-color: slateblue;
+}
+
+#cityInput::placeholder{
+    color: thistle;
+}
+
+#submit{
+    width: 20%;
+    background-color: red;
+    font-size:medium;
+    font-weight: 700;
+}
+
+#cityOptions{
+display: none;
+flex-direction: column;
+}
+
+#cityOptions *{
+    background-color: teal;
+    font-weight: 600;
+}
